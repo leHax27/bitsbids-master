@@ -21,7 +21,7 @@ function Home() {
 
     const typed = new Typed(greetingRef.current, options);
 
-    Axios.get("http://192.168.137.1:8080/products")
+    Axios.get("http://172.16.12.29:8080/products")
       .then((res) => {
         setProductsData(res.data);
       })

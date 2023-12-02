@@ -38,14 +38,14 @@ const AddProduct = () => {
       formData.append('file', product.images);
 
       // Make a POST request to upload the image
-      const uploadResponse = await axios.post('http://localhost:8080/upload', formData);
+      const uploadResponse = await axios.post('http://172.16.12.29:8080/upload', formData);
       const imageUrl = uploadResponse.data; // Assuming the backend responds with the image URL
 
       // Update the product object with the image URL and username
       const updatedProduct = { ...product, imageKey: imageUrl, username: localStorage.getItem('loggedInUsername') };
 
       // Make a POST request to add the product
-      const response = await axios.post('http://localhost:8080/products', updatedProduct);
+      const response = await axios.post('http://172.16.12.29:8080/products', updatedProduct);
       console.log(response);
     } catch (error) {
       console.error('Error adding product:', error);

@@ -21,7 +21,7 @@ const ProfileSell = () => {
 
   const getUserData = async () => {
     try {
-      const response = await axios.get('/users/1'); // Replace '1' with the actual user ID
+      const response = await axios.get('http://172.16.12.29:8080/users/1'); // Replace '1' with the actual user ID
       setUserData(response.data);
     } catch (error) {
       console.error('Error fetching user data:', error);

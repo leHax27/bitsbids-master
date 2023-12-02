@@ -6,12 +6,12 @@ import './ProfileBid.css';
 const ProfileBid = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [userData, setUserData] = useState({
-    username: "User's Name",
-    email: "user@example.com",
-    firstname: "Eshaa",
-    lastname: "Aranggan",
-    bitsid: "2022A7PS2013H",
-    hostel: "Malaviya",
+    username: "Test",
+    email: "f20202525@hyderabad.bits-pilani.ac.in",
+    firstname: "Ramu",
+    lastname: "Kaka",
+    bitsid: "2020B1AA2525H",
+    hostel: "Vyas",
   });
 
   useEffect(() => {
